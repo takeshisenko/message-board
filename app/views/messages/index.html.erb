@@ -1,5 +1,4 @@
 <div class="panel panel-default">
-  <div class="panel panel-primary">
   <p class="lead">メッセージ一覧</p>
   </div>
   <div class="panel-body">
@@ -13,10 +12,10 @@
 
 <%= form_for(@message) do |f| %>
   <p class="bg-success text-left">名前</p>
-  <%= f.text_field :name %>
+  <%= f.text_area :name %>
 <br>
   <p class="bg-success text-left">アイデア内容</p>
-  <%= f.text_field :body %>
+  <%= f.text_area :body %>
   <br>
   <%= f.submit class: "btn btn-primary btn-lg" %>
   <!-- Large button -->
